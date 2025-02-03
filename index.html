@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
+    <title>Word Counter</title>
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="logo">Word Counter</div>
+            <ul class="nav-links">
+                <li><a href="#tool-section">Tool</a></li>
+                <li><a href="#info-section">Information</a></li>
+                <li><a href="#qna-section">FAQs</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Page Layout -->
+    <div class="page-layout">
+
+        <!-- Main Content -->
+        <div class="main-content">
+            <!-- Tool Section -->
+            <div id="tool-section" class="container animate-fade-in">
+                <h1 class="heading">Word Counter Tool</h1>
+                <textarea name="inputbox" id="inputbox" cols="30" rows="10" oninput="wordCounter()" placeholder="Enter your text here..."></textarea>
+                <div class="outputBox">
+                    <div class="output">
+                        <label for="words">Total Words</label>
+                        <input type="button" value="0" id="words">
+                    </div>
+                    <div class="output">
+                        <label for="chars">Total Characters</label>
+                        <input type="button" value="0" id="chars">
+                    </div>
+                    <div class="output">
+                        <label for="alphabets">Total Alphabets</label>
+                        <input type="button" value="0" id="alphabets">
+                    </div>
+                    <div class="output">
+                        <label for="numbers">Total Numbers</label>
+                        <input type="button" value="0" id="numbers">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Information Section -->
+            <div id="info-section" class="info-section animate-fade-in">
+                <h2>About This Tool</h2>
+                <p>This Word Counter tool helps you analyze your text by providing statistics like total words, characters, alphabets, and numbers. It’s useful for essays, documents, or any writing tasks where word count is important.</p>
+                <h3>How to Use:</h3>
+                <ul>
+                    <li>Enter your text in the box above.</li>
+                    <li>Real-time statistics like word count and character count will appear below.</li>
+                </ul>
+            </div>
+
+            <!-- Q&A Section -->
+            <div id="qna-section" class="qna-section animate-fade-in">
+                <h2>Frequently Asked Questions (FAQs)</h2>
+                <div class="qna">
+                    <h3 class="question">What is a Word Counter?</h3>
+                    <p class="answer">A Word Counter is a tool that calculates the number of words, characters, alphabets, and numbers in a given text.</p>
+                </div>
+                <div class="qna">
+                    <h3 class="question">How accurate is this tool?</h3>
+                    <p class="answer">This tool is designed to provide real-time and highly accurate results for word and character counts.</p>
+                </div>
+                <div class="qna">
+                    <h3 class="question">Can I use this for essays or blog posts?</h3>
+                    <p class="answer">Yes, this tool is perfect for essays, blog posts, and any text that requires detailed analysis.</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
